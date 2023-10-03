@@ -1,11 +1,10 @@
 <template>
-  <div class="">
-    e
+  <div>
+
   </div>
 </template>
 
-<script setup>
-import "@master/css";
+<script setup lang="ts">
 
 </script>
 
