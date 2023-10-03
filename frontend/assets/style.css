@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Microsoft JhengHei;
+}
+
+/*firefox chrome IE/Edge 隱藏滾動條/*/
+html {
+  overflow: -moz-hidden-unscrollable;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: calc(100vw + 18px);
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
