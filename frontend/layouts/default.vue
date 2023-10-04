@@ -1,11 +1,11 @@
 <template>
-    <div class="h:80px flex jc:space-between ai:center bg:sky-60 color:white p:10px f:20 f:semibold">
+    <div class="h:80px flex jc:space-between ai:center color:sky-74 p:10px f:20 f:semibold">
         <IconMenu2 class="hide@>md mx:20px"/>
             <ul class="lt:none hide@<md flex ai:center mx:20px">
-                <li class="cursor:pointer inline mx:20px shadow:0|2|white:hover ~300ms|ease-in"><NuxtLink to="/">首頁</NuxtLink></li>
-                <li class="cursor:pointer inline mx:20px shadow:0|2|white:hover ~300ms|ease-in"><NuxtLink to="/extracurricular">課外活動</NuxtLink></li>
-                <li class="cursor:pointer inline mx:20px shadow:0|2|white:hover ~300ms|ease-in"><NuxtLink to="/recommended_activities">推薦活動</NuxtLink></li>
-                <li class="cursor:pointer inline mx:20px shadow:0|2|white:hover ~300ms|ease-in"><NuxtLink to="/connection">聯絡我們</NuxtLink></li>
+                <li @click="moveTo('index')" class="cursor:pointer inline mx:20px shadow:0|2|white:hover ~300ms|ease-in">首頁</li>
+                <li @click="moveTo('extracurricular')" class="cursor:pointer inline mx:20px shadow:0|2|white:hover ~300ms|ease-in">課外活動</li>
+                <li @click="moveTo('recommended_activities')" class="cursor:pointer inline mx:20px shadow:0|2|white:hover ~300ms|ease-in">推薦活動</li>
+                <li @click="moveTo('connection')" class="cursor:pointer inline mx:20px shadow:0|2|white:hover ~300ms|ease-in">聯絡我們</li>
             </ul>
             <div class="rel flex right:35px text:center">
                 <a class="cursor:pointer mx:30px">wewae
@@ -15,12 +15,12 @@
     <slot/>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import "@master/css";
 import { IconMenu2 } from "@tabler/icons-vue"
-useHead({
-    title:"app"
-})
+
+const router = useRouter()
+const moveTo = (path:string) => router.push({ name: path })
 
 </script>
 <style scoped>

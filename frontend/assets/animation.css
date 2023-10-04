@@ -1,0 +1,13 @@
+.Transition-enter-active {
+  transition: all 0.4s ease-out;
+}
+
+.Transition-leave-active {
+  transition: all 0.6s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.Transition-enter-from,
+.Transition-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
