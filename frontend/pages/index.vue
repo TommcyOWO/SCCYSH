@@ -1,24 +1,49 @@
 <template>
   <div class="m:30px f:semibold">
-    <section class="my:50px">
-      <h1>學生為什麼要參與志工服務?</h1>
+    <section class="my:20px">
+        <h1>我們是誰：</h1>
+          <p class="f:20 w:600px color:gray mt:10px">
+            CSG 全名為 CYSH Study Group，即嘉義高中讀書會。
+            身為一群志向遠大的高中生，我們不想僅僅透過辦讀書會讓大家受惠
+            因此我們創了 CSG 歷程獵人
+            透過彙整、媒合國高中生能參加的課外活動
+            充實你的學習歷程
+            創造一個難忘的高中生活!
+          </p>
+    </section>
+    <section class="my:20px">
+      <h1>為什麼您需要我們?</h1>
       <ul class="inline-block list-style:none text:left mt:10px bt:2|solid|gray-86">
-        <li class="my:10px flex"><IconCircleCheck color='gray'/>學生需要公服時數以獲得學分與撰寫經歷。</li>
-        <li class="my:10px flex"><IconCircleCheck color='gray'/>志工服務的概念已逐漸為學生與老師所接受，成為學習中的一環。</li>
-        <li class="my:10px flex"><IconCircleCheck color='gray'/>通過參與偏鄉志工服務，協助他人，理解做志工服務的真正意義。</li>
+        <li class="my:10px flex"><IconCircleCheck color='gray'/>我們的「獵人」會幫你彙整全台的課外活動，包括競賽、營隊、志工機會等。</li>
+        <li class="my:10px flex"><IconCircleCheck color='gray'/>各活動的地點、報名連結、報名截止日期等都會告訴你。</li>
+        <li class="my:10px flex"><IconCircleCheck color='gray'/>快速搜尋到適合你的活動，充實學習歷程!。</li>
       </ul>
     </section>
-    <section class="my:50px">
-      <h1>我們的願景：</h1>
-      <p class="inline-block f:20 w:600px color:gray-60">
-        我們的團隊建立的是一個平台，一個非營利組織，並且致力於改善目前在偏鄉做志工服務遇到的問題。我們的責任是擔任雙方的仲介，並且盡可能滿足兩邊的需求。 我們決定建立一個平台。這個平台的一端，連結的人將是那些需要公服時數，又或是想有機會至偏鄉做志工的學生；平台的另一端，連結的是那些長期深耕、致力於做這些服務的基金會、關懷中心、社會組織等等的機構們。 我們希望此平台，可以搭起兩邊的橋樑，讓學生有更多機會去參與這些志工服務，並且學習並累積經驗，也讓機構可以不斷的有做為志工的學生來參與他們的志工活動，並且盡可能的確保雙方有最適當的配對，相信這對學生與機構都會是一個很好的平台。 我們的團隊建立的是一個平台，一個非營利組織，並且致力於改善目前在偏鄉做志工服務遇到的問題。我們的責任是擔任雙方的仲介，並且盡可能滿足兩邊的需求。</p>
+    <section class="my:20px w:600px">
+        <h1>和我們互動~</h1>
+          <p class="inline-block f:20 color:gray mt:10px">
+            我們有一個 Discord 伺服器，除了不定期辦適合大眾的線上讀書會外，
+            也有一個溫暖的社群 (至少目前如此)
+            快點來吧!
+            </p>
+            <div class="inline-block">
+              <a target="_blank" href="https://bit.ly/45Y9AIX" class="f:18 text:center flex color:gray-60 shadow:0|2|gray-60:hover ~300ms|ease-in"><IconBrandDiscordFilled/> Discord</a>
+            </div>
+    </section>
+    <section>
+      <h1>目前職位有：</h1>
+      <ul class="list-style:none inline-block mt:10px bt:2|solid|gray-86">
+        <li class="my:10px flex color:gray"><IconFocus2 color="gray"/>獵人：協助尋找課外活動與競賽</li>
+        <li class="my:10px flex color:gray"><IconBrandInstagram color="gray"/>公關：經營 IG、處理電子郵件等</li>
+        <li class="my:10px flex color:gray"><IconSettings2 color="gray"/>工程師：負責維護網頁與資料庫</li>
+      </ul>
     </section>
   </div>
 </template>
 
 <script setup>
 import '@master/css'
-import { IconCircleCheck } from '@tabler/icons-vue';
+import { IconCircleCheck,IconBrandDiscordFilled, IconFocus2, IconBrandInstagram, IconSettings2 } from '@tabler/icons-vue';
 
 </script>
 
