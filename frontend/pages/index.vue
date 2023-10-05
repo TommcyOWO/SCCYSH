@@ -1,6 +1,6 @@
 <template>
   <div class="m:30px f:semibold">
-    <section class="my:20px">
+    <section class="my:60px">
         <h1>我們是誰：</h1>
           <p class="f:20 w:600px color:gray mt:10px">
             CSG 全名為 CYSH Study Group，即嘉義高中讀書會。
@@ -11,7 +11,7 @@
             創造一個難忘的高中生活!
           </p>
     </section>
-    <section class="my:20px">
+    <section class="my:60px">
       <h1>為什麼您需要我們?</h1>
       <ul class="inline-block list-style:none text:left mt:10px bt:2|solid|gray-86">
         <li class="my:10px flex"><IconCircleCheck color='gray'/>我們的「獵人」會幫你彙整全台的課外活動，包括競賽、營隊、志工機會等。</li>
@@ -19,7 +19,7 @@
         <li class="my:10px flex"><IconCircleCheck color='gray'/>快速搜尋到適合你的活動，充實學習歷程!。</li>
       </ul>
     </section>
-    <section class="my:20px w:600px">
+    <section class="my:60px w:600px">
         <h1>和我們互動~</h1>
           <p class="inline-block f:20 color:gray mt:10px">
             我們有一個 Discord 伺服器，除了不定期辦適合大眾的線上讀書會外，
@@ -33,9 +33,9 @@
     <section>
       <h1>目前職位有：</h1>
       <ul class="list-style:none inline-block mt:10px bt:2|solid|gray-86">
-        <li class="my:10px flex color:gray"><IconFocus2 color="gray"/>獵人：協助尋找課外活動與競賽</li>
-        <li class="my:10px flex color:gray"><IconBrandInstagram color="gray"/>公關：經營 IG、處理電子郵件等</li>
-        <li class="my:10px flex color:gray"><IconSettings2 color="gray"/>工程師：負責維護網頁與資料庫</li>
+        <li class="my:10px flex color:gray"><IconFocus2 color="gray"/>獵人：協助尋找課外活動與競賽。</li>
+        <li class="my:10px flex color:gray"><IconBrandInstagram color="gray"/>公關：經營 IG、處理電子郵件等。</li>
+        <li class="my:10px flex color:gray"><IconSettings2 color="gray"/>工程師：負責維護網頁與資料庫。</li>
       </ul>
     </section>
     <div class="w:100% h:20px text:center"><a target="_blank" href="https://github.com/TommcyOWO" class="flex jc:center color:gray"><IconBadgeCc/> Dev by Tomycat</a></div>
