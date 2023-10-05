@@ -10,12 +10,11 @@
         </div>
         
     <slot/>
-    <div class="w:100% h:20px text:center"><a target="_blank" href="https://github.com/TommcyOWO" class="flex jc:center color:gray"><IconBadgeCc/> Dev by Tomycat</a></div>
 </template>
 
 <script setup lang="ts">
 import "@master/css";
-import { IconMenu2, IconBadgeCc } from "@tabler/icons-vue"
+import { IconMenu2 } from "@tabler/icons-vue"
 
 const router = useRouter()
 const moveTo = (path:string) => router.push({ name: path })

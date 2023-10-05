@@ -38,12 +38,13 @@
         <li class="my:10px flex color:gray"><IconSettings2 color="gray"/>工程師：負責維護網頁與資料庫</li>
       </ul>
     </section>
+    <div class="w:100% h:20px text:center"><a target="_blank" href="https://github.com/TommcyOWO" class="flex jc:center color:gray"><IconBadgeCc/> Dev by Tomycat</a></div>
   </div>
 </template>
 
 <script setup>
 import '@master/css'
-import { IconCircleCheck,IconBrandDiscordFilled, IconFocus2, IconBrandInstagram, IconSettings2 } from '@tabler/icons-vue';
+import { IconCircleCheck,IconBrandDiscordFilled, IconBadgeCc, IconFocus2, IconBrandInstagram, IconSettings2 } from '@tabler/icons-vue';
 
 </script>
 
