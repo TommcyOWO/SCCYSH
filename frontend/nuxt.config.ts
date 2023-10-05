@@ -5,9 +5,7 @@ export default defineNuxtConfig({
     '@/assets/style.css',
     '@/assets/animation.css',
   ],
-  modules: [
-    '@nuxtjs/i18n',
-  ],
+  modules: ['@nuxtjs/i18n','@nuxtjs/algolia'],
   app: {
     pageTransition: {
       name: 'Transition',
@@ -23,4 +21,3 @@ export default defineNuxtConfig({
     }
   }
 })
-

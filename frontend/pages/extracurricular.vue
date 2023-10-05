@@ -8,8 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import "@master/css";
-
+import '@master/css'
 </script>
 
 <style scoped></style>
