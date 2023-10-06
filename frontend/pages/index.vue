@@ -1,24 +1,26 @@
 <template>
   <div class="mx:60px my:30px f:medium">
     <section class="my:60px">
-      <h1 class="f:40">充實歷程，成就青春</h1>
-        <p class="my:20px color:gray">我們是 CSG 歷程獵人，負責幫你找競賽、營隊、志工等課外活動<br>充實你的學習歷程，為高中生活留下滿滿回憶!</p>
-      <div class="flex">
-        <a class="btn" target="_blank" href="https://www.instagram.com/studygroup_cysh/"><IconBrandInstagram class="mr:3px"/>查看IG粉絲專業</a>
-        <a class="btn ml:10px" target="_blank" href="https://bit.ly/45Y9AIX"><IconBrandDiscordFilled class="mr:3px"/>加入我們Discord</a>
-        <a class="btn ml:10px" target="_blank" href="https://bit.ly/48D54C2"><IconPlus/>加入我們!!</a>
-      </div>
+        <h1 class="f:40">充實歷程，成就青春</h1>
+          <p class="my:20px color:gray">我們是 CSG 歷程獵人，負責幫你找競賽、營隊、志工等課外活動<br>充實你的學習歷程，為高中生活留下滿滿回憶!</p>
+        <div class="flex">
+          <a class="btn" target="_blank" href="https://www.instagram.com/studygroup_cysh/"><IconBrandInstagram class="mr:3px"/>查看IG粉絲專業</a>
+          <a class="btn ml:10px" target="_blank" href="https://bit.ly/45Y9AIX"><IconBrandDiscordFilled class="mr:3px"/>加入我們Discord</a>
+          <a class="btn ml:10px" target="_blank" href="https://bit.ly/48D54C2"><IconPlus/>加入我們!!</a>
+        </div>
     </section>
     <section class="my:60px w:200px@<md w:400@>md">
+      
         <h1>我們是誰：</h1>
-          <p class="f:20 color:gray mt:10px">
-            CSG 全名為 CYSH Study Group，即嘉義高中讀書會。
-            身為一群志向遠大的高中生，我們不想僅僅透過辦讀書會讓大家受惠
-            因此我們創了 CSG 歷程獵人
-            透過彙整、媒合國高中生能參加的課外活動
-            充實你的學習歷程
-            創造一個難忘的高中生活!
-          </p>
+        <p class="f:20 color:gray mt:10px">
+          CSG 全名為 CYSH Study Group，即嘉義高中讀書會。
+          身為一群志向遠大的高中生，我們不想僅僅透過辦讀書會讓大家受惠
+          因此我們創了 CSG 歷程獵人
+          透過彙整、媒合國高中生能參加的課外活動
+          充實你的學習歷程
+          創造一個難忘的高中生活!
+        </p>
+        
     </section>
     <section class="my:60px">
       <h1>為什麼您需要我們?</h1>
