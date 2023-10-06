@@ -1,11 +1,12 @@
 <template>
-  <div class="mx:60px my:30px f:semibold">
+  <div class="mx:60px my:30px f:medium">
     <section class="my:60px">
       <h1 class="f:40">充實歷程，成就青春</h1>
         <p class="my:20px color:gray">我們是 CSG 歷程獵人，負責幫你找競賽、營隊、志工等課外活動<br>充實你的學習歷程，為高中生活留下滿滿回憶!</p>
       <div class="flex">
         <a class="btn" target="_blank" href="https://www.instagram.com/studygroup_cysh/"><IconBrandInstagram class="mr:3px"/>查看IG粉絲專業</a>
         <a class="btn ml:10px" target="_blank" href="https://bit.ly/45Y9AIX"><IconBrandDiscordFilled class="mr:3px"/>加入我們Discord</a>
+        <a class="btn ml:10px" target="_blank" href="https://bit.ly/48D54C2"><IconPlus/>加入我們!!</a>
       </div>
     </section>
     <section class="my:60px w:200px@<md w:400@>md">
@@ -44,6 +45,7 @@
         <li class="my:10px flex color:gray"><IconFocus2 color="gray"/>獵人：協助尋找課外活動與競賽。</li>
         <li class="my:10px flex color:gray"><IconBrandInstagram color="gray"/>公關：經營 IG、處理電子郵件等。</li>
         <li class="my:10px flex color:gray"><IconSettings2 color="gray"/>工程師：負責維護網頁與資料庫。</li>
+        <a class="btn mt:20px flex" target="_blank" href="https://bit.ly/48D54C2"><IconPlus/>加入我們!!</a>
       </ul>
     </section>
     <div class="w:100% h:20px text:center"><a target="_blank" href="https://github.com/TommcyOWO" class="flex jc:center color:gray"><IconBadgeCc/> Dev by Tomycat</a></div>
@@ -58,7 +60,7 @@ Style.extend('classes', {
 })
 
 init()
-import { IconCircleCheck,IconBrandDiscordFilled, IconBadgeCc, IconFocus2, IconBrandInstagram, IconSettings2 } from '@tabler/icons-vue';
+import { IconCircleCheck,IconBrandDiscordFilled , IconPlus, IconBadgeCc, IconFocus2, IconBrandInstagram, IconSettings2 } from '@tabler/icons-vue';
 
 </script>
 
