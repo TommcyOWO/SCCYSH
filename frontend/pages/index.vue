@@ -1,8 +1,16 @@
 <template>
-  <div class="m:30px f:semibold">
+  <div class="mx:60px my:30px f:semibold">
     <section class="my:60px">
+      <h1 class="f:40">充實歷程，成就青春</h1>
+        <p class="my:20px color:gray">我們是 CSG 歷程獵人，負責幫你找競賽、營隊、志工等課外活動<br>充實你的學習歷程，為高中生活留下滿滿回憶!</p>
+      <div class="flex">
+        <a class="btn" target="_blank" href="https://www.instagram.com/studygroup_cysh/"><IconBrandInstagram class="mr:3px"/>查看IG粉絲專業</a>
+        <a class="btn ml:10px" target="_blank" href="https://bit.ly/45Y9AIX"><IconBrandDiscordFilled class="mr:3px"/>加入我們Discord</a>
+      </div>
+    </section>
+    <section class="my:60px w:200px@<md w:400@>md">
         <h1>我們是誰：</h1>
-          <p class="f:20 w:600px color:gray mt:10px">
+          <p class="f:20 color:gray mt:10px">
             CSG 全名為 CYSH Study Group，即嘉義高中讀書會。
             身為一群志向遠大的高中生，我們不想僅僅透過辦讀書會讓大家受惠
             因此我們創了 CSG 歷程獵人
@@ -19,7 +27,7 @@
         <li class="my:10px flex"><IconCircleCheck color='gray'/>快速搜尋到適合你的活動，充實學習歷程!。</li>
       </ul>
     </section>
-    <section class="my:60px w:600px">
+    <section class="my:60px w:200px@<md w:400@>md">
         <h1>和我們互動~</h1>
           <p class="inline-block f:20 color:gray mt:10px">
             我們有一個 Discord 伺服器，除了不定期辦適合大眾的線上讀書會外，
@@ -43,7 +51,13 @@
 </template>
 
 <script setup>
-import '@master/css'
+import { init, Style } from '@master/css';
+
+Style.extend('classes', {
+  btn: 'inline-flex b:none center-content font:14 font:semibold font:white bg:sky-74 px:18 h:40 r:4',
+})
+
+init()
 import { IconCircleCheck,IconBrandDiscordFilled, IconBadgeCc, IconFocus2, IconBrandInstagram, IconSettings2 } from '@tabler/icons-vue';
 
 </script>

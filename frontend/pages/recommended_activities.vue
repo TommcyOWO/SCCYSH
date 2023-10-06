@@ -18,8 +18,6 @@
       </div>
     
     </div>
-
-
     <div class="flex:1">
       <div class="m:40px|20px">
         <label class="block m:0|20px">費用：</label> 
@@ -67,7 +65,6 @@
         <label class="block m:0|20px">活動內容：</label> 
         <input class="p:5px|5px outline:none shadow:0|2|blue-60:focus ~300ms|ease-in border:none" type="text">
       </div>
-    
     </div>
   </div>
     <button class="btn">送出</button>
