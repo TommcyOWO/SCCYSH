@@ -5,7 +5,6 @@ from algoliasearch.search_client import SearchClient
 client = pymongo.MongoClient('mongodb://your_mongodb_connection_string')
 db = client['your_database']
 collection = db['your_collection']
-
 # 連接 Algolia
 client = SearchClient.create('your_algolia_app_id', 'your_algolia_api_key')
 index = client.init_index('your_algolia_index_name')
