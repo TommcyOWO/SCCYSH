@@ -10,7 +10,6 @@
         </div>
     </section>
     <section class="my:60px w:200px@<md w:400@>md">
-      
         <h1>我們是誰：</h1>
         <p class="f:20 color:gray mt:10px">
           CSG 全名為 CYSH Study Group，即嘉義高中讀書會。
@@ -20,15 +19,16 @@
           充實你的學習歷程
           創造一個難忘的高中生活!
         </p>
-        
+        <img src="@/assets/img.jpg" class="my:90px h:200 w:200">
     </section>
     <section class="my:60px">
       <h1>為什麼您需要我們?</h1>
-      <ul class="inline-block list-style:none text:left mt:10px bt:2|solid|gray-86">
+      <ul class="block list-style:none text:left mt:10px bt:2|solid|gray-86">
         <li class="my:10px flex"><IconCircleCheck color='gray'/>我們的「獵人」會幫你彙整全台的課外活動，包括競賽、營隊、志工機會等。</li>
         <li class="my:10px flex"><IconCircleCheck color='gray'/>各活動的地點、報名連結、報名截止日期等都會告訴你。</li>
         <li class="my:10px flex"><IconCircleCheck color='gray'/>快速搜尋到適合你的活動，充實學習歷程!。</li>
       </ul>
+      <img src="@/assets/img.jpg" class="my:90px h:200 w:200">
     </section>
     <section class="my:60px w:200px@<md w:400@>md">
         <h1>和我們互動~</h1>
@@ -37,9 +37,10 @@
             也有一個溫暖的社群 (至少目前如此)
             快點來吧!
             </p>
-            <div class="inline-block">
+            <div class="block">
               <a target="_blank" href="https://bit.ly/45Y9AIX" class="f:18 text:center flex color:gray-60 shadow:0|2|gray-60:hover ~300ms|ease-in"><IconBrandDiscordFilled/> Discord</a>
             </div>
+            <img src="@/assets/img.jpg" class="my:90px h:200 w:200">
     </section>
     <section>
       <h1>目前職位有：</h1>
