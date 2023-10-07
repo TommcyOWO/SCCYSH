@@ -13,12 +13,13 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 
 from pymongo import MongoClient
+from algoliasearch.search_client import SearchClient
 
 #過濾器
-from .cmd.model import *
+from model import *
 
 #oauth 初始化
-from .cmd.oauth import *
+from oauth import *
 
 #初始化
 limiter = Limiter(key_func=get_remote_address)
@@ -43,10 +44,13 @@ app.add_middleware(
 client = MongoClient("mongodb://localhost:27017/")
 
 #DB setup
-db = client['count']
+count_db = client['count']
+activity_db = client['activity']
 
-users = db.users
-id_users = db.id_users
+users = count_db.users
+id_users = count_db.id_users
+
+ac_db = activity_db.databace
 
 #阻擋request
 @app.exception_handler(RateLimitExceeded)

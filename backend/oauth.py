@@ -6,7 +6,7 @@ import jwt
 from jwt import PyJWTError
 from passlib.context import CryptContext
 
-from model import *
+from .model import *
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
