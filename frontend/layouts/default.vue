@@ -14,6 +14,7 @@
             <li @click="moveTo('recommended_activities')" class="cursor:pointer block m:20px|30px">推薦活動</li>
             <li @click="moveTo('connection')" class="cursor:pointer block m:20px|30px">聯絡我們</li>
         </ul>
+        <div> {{ result }} </div>
     <slot/>
 </template>
 
@@ -26,6 +27,8 @@ const [menuv , menu] = useToggle()
 const router = useRouter()
 const moveTo = (path:string) => router.push({ name: path })
 
+const { result, search } = useAlgoliaSearch('CSG') // pass your index name as param
+await search({ query: 'John' });
 </script>
 <style scoped>
 
