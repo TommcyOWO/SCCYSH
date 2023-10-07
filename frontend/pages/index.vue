@@ -3,10 +3,10 @@
     <section class="my:60px">
         <h1 class="f:40">充實歷程，成就青春</h1>
           <p class="my:20px color:gray">我們是 CSG 歷程獵人，負責幫你找競賽、營隊、志工等課外活動<br>充實你的學習歷程，為高中生活留下滿滿回憶!</p>
-        <div class="flex">
-          <a class="btn" target="_blank" href="https://www.instagram.com/studygroup_cysh/"><IconBrandInstagram class="mr:3px"/>查看IG粉絲專業</a>
-          <a class="btn ml:10px" target="_blank" href="https://bit.ly/45Y9AIX"><IconBrandDiscordFilled class="mr:3px"/>加入我們Discord</a>
-          <a class="btn ml:10px" target="_blank" href="https://bit.ly/48D54C2"><IconPlus/>加入我們!!</a>
+        <div class="inline-block">
+          <a class="btn m:10px" target="_blank" href="https://www.instagram.com/studygroup_cysh/"><IconBrandInstagram class="mr:3px"/>查看IG粉絲專業</a>
+          <a class="btn m:10px" target="_blank" href="https://bit.ly/45Y9AIX"><IconBrandDiscordFilled class="mr:3px"/>加入我們Discord</a>
+          <a class="btn m:10px" target="_blank" href="https://bit.ly/48D54C2"><IconPlus/>加入我們!!</a>
         </div>
     </section>
     <section class="my:60px w:200px@<md w:400@>md">
@@ -28,7 +28,6 @@
         <li class="my:10px flex"><IconCircleCheck color='gray'/>各活動的地點、報名連結、報名截止日期等都會告訴你。</li>
         <li class="my:10px flex"><IconCircleCheck color='gray'/>快速搜尋到適合你的活動，充實學習歷程!。</li>
       </ul>
-      <img src="@/assets/img.jpg" class="my:90px h:200 w:200">
     </section>
     <section class="my:60px w:200px@<md w:400@>md">
         <h1>和我們互動~</h1>
@@ -40,7 +39,6 @@
             <div class="block">
               <a target="_blank" href="https://bit.ly/45Y9AIX" class="f:18 text:center flex color:gray-60 shadow:0|2|gray-60:hover ~300ms|ease-in"><IconBrandDiscordFilled/> Discord</a>
             </div>
-            <img src="@/assets/img.jpg" class="my:90px h:200 w:200">
     </section>
     <section>
       <h1>目前職位有：</h1>

@@ -5,14 +5,14 @@ export default defineNuxtConfig({
     '@/assets/style.css',
     '@/assets/animation.css',
   ],
-  modules: ['@nuxtjs/i18n',
+  modules: ['@nuxtjs/i18n','@vueuse/nuxt',
             // '@nuxtjs/algolia'
   ],
   app: {
-    pageTransition: {
-      name: 'Transition',
-      mode: 'out-in'
-    },
+    // pageTransition: {
+      // name: 'Transition',
+      // mode: 'out-in'
+    // },
     head: {
       titleTemplate: 'CSG 歷程獵人',
       meta: [
