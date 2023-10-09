@@ -12,14 +12,14 @@ from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 
-from pymongo import MongoClient
-from algoliasearch.search_client import SearchClient
-
 #過濾器
 from model import *
 
 #oauth 初始化
 from oauth import *
+
+#databace
+from asyncs import *
 
 #初始化
 limiter = Limiter(key_func=get_remote_address)
@@ -38,19 +38,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-#DB 初始化
-#DB herf
-client = MongoClient("mongodb://localhost:27017/")
-
-#DB setup
-count_db = client['count']
-activity_db = client['activity']
-
-users = count_db.users
-id_users = count_db.id_users
-
-ac_db = activity_db.databace
 
 #阻擋request
 @app.exception_handler(RateLimitExceeded)
@@ -119,6 +106,12 @@ async def reset_acount(user:register_reset):
     users.update_one({'name':user.username,'email':user.email},{'$set': {'password':h_password }})
     
     return {"message":"Reset done"}
+
+@app.post('/api/upload')
+async def upload(request:Request):
+    resqonse = await async_data()
+    print(resqonse)
+    pass
 
 if __name__ == "__main__":
     # config = Config()

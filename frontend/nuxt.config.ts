@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@/assets/animation.css',
   ],
   modules: ['@nuxtjs/i18n','@vueuse/nuxt',
-            '@nuxtjs/algolia'
+            '@nuxtjs/algolia',
   ],
   app: {
     // pageTransition: {
@@ -21,5 +21,9 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Meta description' }
       ]
     }
+  },
+  algolia: {
+    apiKey: '5bb80baef05d10fd0476b8d33038445f',
+    applicationId: 'K6A25QQ0RF'
   }
 })
