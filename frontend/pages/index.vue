@@ -20,7 +20,23 @@
           創造一個難忘的高中生活!
         </p>
     </section>
-      <img src="@/assets/img.jpg" class="block my:90px h:500 w:100%">
+    <section class="my:40px w:100%">
+      <ul class="h:730px list-style:none overflow:hidden">
+        <li>
+        <img src="@/assets/img.png" class="w:100% overflow:hidden">
+        </li>
+        <li>
+          <img src="@/assets/img.png" class="w:100% overflow:hidden">
+        </li>
+        <li>
+          <img src="@/assets/img.png" class="w:100% overflow:hidden">
+        </li>
+      </ul>
+      <div class="flex jc:center bottom:100px rel">
+        <IconArrowBadgeLeft height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>
+        <IconArrowBadgeRight height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>
+      </div>
+    </section>
     <section class="my:60px">
       <h1>為什麼您需要我們?</h1>
       <ul class="block list-style:none text:left mt:10px bt:2|solid|gray-86">
@@ -61,7 +77,7 @@ Style.extend('classes', {
 })
 
 init()
-import { IconCircleCheck,IconBrandDiscordFilled , IconPlus, IconBadgeCc, IconFocus2, IconBrandInstagram, IconSettings2 } from '@tabler/icons-vue';
+import { IconCircleCheck,IconBrandDiscordFilled , IconPlus, IconBadgeCc, IconFocus2, IconBrandInstagram, IconSettings2, IconArrowBadgeRight, IconArrowBadgeLeft } from '@tabler/icons-vue';
 
 </script>
 
