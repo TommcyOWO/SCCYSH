@@ -19,8 +19,8 @@
           充實你的學習歷程
           創造一個難忘的高中生活!
         </p>
-        <img src="@/assets/img.jpg" class="my:90px h:200 w:200">
     </section>
+      <img src="@/assets/img.jpg" class="block my:90px h:500 w:100%">
     <section class="my:60px">
       <h1>為什麼您需要我們?</h1>
       <ul class="block list-style:none text:left mt:10px bt:2|solid|gray-86">

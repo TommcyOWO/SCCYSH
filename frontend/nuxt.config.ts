@@ -9,10 +9,10 @@ export default defineNuxtConfig({
             '@nuxtjs/algolia',
   ],
   app: {
-    // pageTransition: {
-      // name: 'Transition',
-      // mode: 'out-in'
-    // },
+    pageTransition: {
+      name: 'Transition',
+      mode: 'out-in'
+    },
     head: {
       titleTemplate: 'CSG 歷程獵人',
       meta: [
