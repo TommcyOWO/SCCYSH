@@ -21,17 +21,20 @@
         </p>
     </section>
     <section class="my:40px w:100%">
-      <ul class="h:730px list-style:none overflow:hidden">
-        <li>
-        <img src="@/assets/img.png" class="w:100% overflow:hidden">
-        </li>
-        <li>
-          <img src="@/assets/img.png" class="w:100% overflow:hidden">
-        </li>
-        <li>
-          <img src="@/assets/img.png" class="w:100% overflow:hidden">
-        </li>
-      </ul>
+
+      <img src="" alt="">
+
+      <!-- <ul class="h:730px list-style:none overflow:hidden"> -->
+        <!-- <li> -->
+        <!-- <img src="@/assets/img.png" class="w:100% overflow:hidden"> -->
+        <!-- </li> -->
+        <!-- <li> -->
+          <!-- <img src="@/assets/img.png" class="w:100% overflow:hidden"> -->
+        <!-- </li> -->
+        <!-- <li> -->
+          <!-- <img src="@/assets/img.png" class="w:100% overflow:hidden"> -->
+        <!-- </li> -->
+      <!-- </ul> -->
       <div class="flex jc:center bottom:100px rel">
         <IconArrowBadgeLeft height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>
         <IconArrowBadgeRight height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>

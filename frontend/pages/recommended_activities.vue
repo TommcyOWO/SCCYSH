@@ -42,7 +42,7 @@
       </div>
       <div class="m:30px|10px">
             <label class="block m:0|20px">聯絡方式：</label> 
-            <textarea class="p:5px|5px outline:none shadow:0|1|gray-80 shadow:0|2|blue-60:focus ~300ms|ease-in border:none bg:gray-86:hover resize:none w:200px h:100px"></textarea>
+            <textarea class="input resize:none w:200px h:100px"></textarea>
       </div>
     </div>
   </div>
@@ -55,6 +55,7 @@
 import { init, Style } from '@master/css';
 
 Style.extend('classes', {
+  input:'p:5px|5px outline:none shadow:0|1|gray-80 shadow:0|2|blue-60:focus ~300ms|ease-in border:none bg:gray-86:hover',
   btn: 'inline-flex b:none center-content font:14 font:semibold font:white bg:sky-74 m:10px px:18 h:40 r:4',
 })
 init()
