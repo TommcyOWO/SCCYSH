@@ -20,24 +20,15 @@
           創造一個難忘的高中生活!
         </p>
     </section>
-    <section class="my:40px w:100%">
-
-      <img src="" alt="">
-
-      <!-- <ul class="h:730px list-style:none overflow:hidden"> -->
-        <!-- <li> -->
-        <!-- <img src="@/assets/img.png" class="w:100% overflow:hidden"> -->
-        <!-- </li> -->
-        <!-- <li> -->
-          <!-- <img src="@/assets/img.png" class="w:100% overflow:hidden"> -->
-        <!-- </li> -->
-        <!-- <li> -->
-          <!-- <img src="@/assets/img.png" class="w:100% overflow:hidden"> -->
-        <!-- </li> -->
-      <!-- </ul> -->
+    <section class="my:40px">
+    <ul ref="imgList" class="list-style:none flex-wrap:nowrap flex overflow:hidden">
+      <li class="overflow:hidden flex:0|0|auto " v-for="img in imgs" :key="img">
+        <img :src="img" class="w:100vw">
+      </li>
+    </ul>
       <div class="flex jc:center bottom:100px rel">
-        <IconArrowBadgeLeft height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>
-        <IconArrowBadgeRight height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>
+        <IconArrowBadgeLeft @click="next_()" height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>
+        <IconArrowBadgeRight @click="" height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>
       </div>
     </section>
     <section class="my:60px">
@@ -74,13 +65,15 @@
 
 <script setup>
 import { init, Style } from '@master/css';
+import { IconCircleCheck,IconBrandDiscordFilled , IconPlus, IconBadgeCc, IconFocus2, IconBrandInstagram, IconSettings2, IconArrowBadgeRight, IconArrowBadgeLeft } from '@tabler/icons-vue';
 
 Style.extend('classes', {
   btn: 'inline-flex b:none center-content font:14 font:semibold font:white bg:sky-74 px:18 h:40 r:4',
 })
 
 init()
-import { IconCircleCheck,IconBrandDiscordFilled , IconPlus, IconBadgeCc, IconFocus2, IconBrandInstagram, IconSettings2, IconArrowBadgeRight, IconArrowBadgeLeft } from '@tabler/icons-vue';
+
+const imgs = ['1.png', '2.png', '3.png', '4.png', '5.png']
 
 </script>
 
