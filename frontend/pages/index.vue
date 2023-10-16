@@ -22,13 +22,14 @@
     </section>
     <section class="my:40px">
     <ul ref="imgList" class="list-style:none flex-wrap:nowrap flex overflow:hidden">
-      <li class="overflow:hidden flex:0|0|auto " v-for="img in imgs" :key="img">
-        <img :src="img" class="w:100vw">
+      <li :class="`overflow:hidden flex:0|0|auto ~300ms|ease-in translateX(${transfroms}%)`" v-for="img in imgs" :key="img">
+        <img :src="img" class="h:100vh">
       </li>
     </ul>
+
       <div class="flex jc:center bottom:100px rel">
-        <IconArrowBadgeLeft @click="next_()" height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>
-        <IconArrowBadgeRight @click="" height="40px" width="40px" color="gray" class="m:20px cursor:pointer"/>
+        <IconArrowBadgeLeft @click="changp_func('next_')" height="40px" width="40px" color="white" class="m:20px cursor:pointer shadow:0|3|white:hover ~300ms|ease-in"/>
+        <IconArrowBadgeRight @click="changp_func('pre')" height="40px" width="40px" color="white" class="m:20px cursor:pointer shadow:0|3|white:hover ~300ms|ease-in"/>
       </div>
     </section>
     <section class="my:60px">
@@ -63,7 +64,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { init, Style } from '@master/css';
 import { IconCircleCheck,IconBrandDiscordFilled , IconPlus, IconBadgeCc, IconFocus2, IconBrandInstagram, IconSettings2, IconArrowBadgeRight, IconArrowBadgeLeft } from '@tabler/icons-vue';
 
@@ -73,7 +74,23 @@ Style.extend('classes', {
 
 init()
 
-const imgs = ['1.png', '2.png', '3.png', '4.png', '5.png']
+const imgs = ref(['1.png', '2.png', '3.png', '4.png', '5.png'])
+
+const transfroms = ref(0)
+
+const changp_func = (type:string) => {
+  if (type === 'next_') {
+    transfroms.value += 100
+  } else {
+    transfroms.value -= 100
+  }
+}
+
+watch(transfroms,(newVal,oldVal)=>{
+  if (newVal > 0 || newVal <-400){
+    transfroms.value = 0
+  }
+})
 
 </script>
 
