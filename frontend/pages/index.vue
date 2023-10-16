@@ -23,20 +23,20 @@
     <section class="my:40px">
     <ul ref="imgList" class="list-style:none flex-wrap:nowrap flex overflow:hidden">
       <li :class="`overflow:hidden flex:0|0|auto ~300ms|ease-in translateX(${transfroms}%)`" v-for="img in imgs" :key="img">
-        <img :src="img" class="h:100vh">
+        <img :src="img" class="w:100vw">
       </li>
     </ul>
 
-      <div class="flex jc:center bottom:100px rel">
-        <IconArrowBadgeLeft @click="changp_func('next_')" height="40px" width="40px" color="white" class="m:20px cursor:pointer shadow:0|3|white:hover ~300ms|ease-in"/>
-        <IconArrowBadgeRight @click="changp_func('pre')" height="40px" width="40px" color="white" class="m:20px cursor:pointer shadow:0|3|white:hover ~300ms|ease-in"/>
+      <div class="flex jc:center bottom:100px@>md bottom:80px@<md rel">
+        <IconArrowBadgeLeft @click="changp_func('next_')" height="40px" width="40px" color="white" class="m:20px cursor:pointer shadow:0|3px|white:hover ~300ms|ease-in"/>
+        <IconArrowBadgeRight @click="changp_func('pre')" height="40px" width="40px" color="white" class="m:20px cursor:pointer shadow:0|3px|white:hover ~300ms|ease-in"/>
       </div>
     </section>
     <section class="my:60px">
       <h1>為什麼您需要我們?</h1>
-      <ul class="block list-style:none text:left mt:10px bt:2|solid|gray-86">
-        <li class="my:10px flex"><IconCircleCheck color='gray'/>我們的「獵人」會幫你彙整全台的課外活動，包括競賽、營隊、志工機會等。</li>
-        <li class="my:10px flex"><IconCircleCheck color='gray'/>各活動的地點、報名連結、報名截止日期等都會告訴你。</li>
+      <ul class="inline-block list-style:none text:left mt:10px bt:2|solid|gray-86">
+        <li class="my:10px flex"><IconCircleCheck color='gray'/>我們的「獵人」會幫你彙整全台的課外活動<br>包括競賽、營隊、志工機會等。</li>
+        <li class="my:10px flex"><IconCircleCheck color='gray'/>各活動的地點、報名連結、報名截止日期等<br>都會告訴你。</li>
         <li class="my:10px flex"><IconCircleCheck color='gray'/>快速搜尋到適合你的活動，充實學習歷程!。</li>
       </ul>
     </section>
